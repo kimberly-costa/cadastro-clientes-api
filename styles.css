@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f3f4f8;
+    font-family: Arial, sans-serif;
+    color: #252540;
+
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+form input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: 2px solid #6254d9;
+    outline-offset: 2px;
+}
+
+form button {
+    background-color: #6254d9;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    background-color: #4937b8;
+
+}
+
+h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#clientes-lista {
+    max-width: 450px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+#clientes-lista li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;   
+
+
+    overflow-wrap: anywhere;
+}
+
+#clientes-lista button {
+background-color: #d16060;
+color: white;
+border: none;
+border-radius: 6px;
+padding: 8px 12px;
+cursor: pointer;
+transition: background-color 0.2s ease;
+flex-shrink: 0;
+
+}
+
+#clientes-lista button:hover {
+transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    form {
+    padding: 18px;
+}
+
+}
